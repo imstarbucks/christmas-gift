@@ -12594,7 +12594,7 @@ main .icon-santa {
   position: absolute;
   width: 150px;
   right: 0;
-  bottom: 2rem;
+  bottom: 1rem;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-animation: fly 3s 2s infinite linear;
