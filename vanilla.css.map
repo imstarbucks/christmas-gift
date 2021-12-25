@@ -1,1 +1,0 @@
-{"version":3,"sources":["vanilla.css"],"names":[],"mappings":"AAAA;EACE,oBAAA;EAAA,oBAAA;EAAA,aAAA;AACF","file":"vanilla.css","sourcesContent":["body{\n  display: flex;\n}\n"]}
