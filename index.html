@@ -6,37 +6,60 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 <title>
-  
-    Boilr Jekyll
-  
+  Christmas Gift
 </title>
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="./css/main.css">
+
 </head>
 <body>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Merry Christmas</title>
-</head>
-<body>
+<body><!-- Modal -->
+<div class="modal fade" id="gift-backdrop" data-bs-backdrop="static"
+data-bs-keyboard="false" tabindex="-1" aria-labelledby="giftModalLabel"
+aria-hidden="true">
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modal-title" id="giftModalLabel">Surpriseee!</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<p>Here are the digital voucher/gift card that u can use!</p>
+			<p>Click each of the items below to redeem your gift :)</p>
+			<ul>
+				<li>
+					<!-- <a target="_blank" href="https://starbucks-my.store.egift.asia/r/8ZXDH2wE">Starbucks RM20 voucher</a> -->
+				</li>
+				<li>
+					<!-- <a target="_blank" href="https://starbucks-my.store.egift.asia/r/9XMOmBJV">Starbucks RM20 voucher</a> -->
+				</li>
+				<li>
+					<!-- <a target="_blank" href="https://starbucks-my.store.egift.asia/r/i8gETvkW">Starbucks Muffin voucher</a> -->
+				</li>
+			</ul>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+			<!-- <button type="button" class="btn btn-primary">Understood</button> -->
+		</div>
+	</div>
+  </div>
+</div>
 <main class="d-flex justify-content-center align-items-center flex-column">
+	<img class="icon-santa" src="../img/icons/santa.png" alt="Santa">
 	<img class="icon-star" src="../img/icons/stars.png" alt="Stars">
 	<p>Ho Ho Ho ...</p>
 	<h1 class="main-text color-dark-spring-green">Merry Christmas</h1>
-	<img class="icon-gift" src="../img/icons/gift.png" alt="Gift">
-	<p class="clic-me-text color-pomana-green font-xs">Click Me!</p>
+	<a role="button" class="gift-btn btn" data-bs-toggle="modal" data-bs-target="#gift-backdrop" href="#gift-backdrop"><img class="icon-gift" src="../img/icons/gift.png" alt="Gift"></a>
+	<p class="click-me-text color-pomana-green font-xs">Click Me!</p>
 </main>
+
 </body>
-</html>
 
-
-<script src="./js/app.js" charset="utf-8"></script>
+<script defer src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script defer src="./js/app.js" charset="utf-8"></script>
 
 </body>
 </html>
