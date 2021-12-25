@@ -12462,7 +12462,7 @@ body {
   margin: 0;
 }
 
-.font-xs {
+.font-xs, .modal-body p {
   font-size: 0.8rem;
 }
 
@@ -12474,7 +12474,7 @@ body {
   background-color: #165B33;
 }
 
-.color-dark-spring-green {
+.color-dark-spring-green, .modal-body p {
   color: #146B3A;
 }
 
@@ -12539,6 +12539,7 @@ h1, .h1 {
 }
 
 p {
+  font-family: "Christmas Font";
   font-size: 1.5rem;
 }
 
@@ -12589,6 +12590,40 @@ main .icon-gift {
           animation: shake 1s infinite linear;
 }
 
+main .icon-santa {
+  position: absolute;
+  width: 150px;
+  right: 0;
+  bottom: 2rem;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-animation: fly 3s 2s infinite linear;
+          animation: fly 3s 2s infinite linear;
+}
+
+@-webkit-keyframes fly {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    right: 100%;
+  }
+}
+
+@keyframes fly {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    right: 100%;
+  }
+}
 @-webkit-keyframes swing {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -12607,7 +12642,6 @@ main .icon-gift {
             transform: translate3d(0, 0, 0) rotate(0);
   }
 }
-
 @keyframes swing {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -12685,5 +12719,28 @@ main .icon-gift {
     -webkit-transform: translate3d(0, 0, 0) rotate(0);
             transform: translate3d(0, 0, 0) rotate(0);
   }
+}
+/* Components */
+.modal-body p {
+  text-align: center;
+}
+.modal-body ul li a {
+  text-decoration: none;
+}
+.modal-body ul {
+  list-style: none;
+  padding: 0;
+}
+.modal-body ul li {
+  text-align: center;
+}
+.modal-body ul li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icons/tree.png");
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
 }
 /*# sourceMappingURL=main.css.map */
